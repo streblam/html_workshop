@@ -1,8 +1,11 @@
+<link rel="stylesheet" href="style.css">
+
+
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+  <label for="fname1">First name:</label><br>
+  <input type="text" id="fname1" name="fname"><br>
+  <label for="lname1">Last name:</label><br>
+  <input type="text" id="lname1" name="lname">
 </form>
 
 <form>
@@ -23,24 +26,28 @@
   <label for="vehicle3"> I have a boat</label>
 </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+<form action="/action_page.php" method="get">
+  <label for="fname2">First name:</label><br>
+  <input type="text" id="fname2" name="fname" value="John"><br>
+  <label for="lname2">Last name:</label><br>
+  <input type="text" id="lname2" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" value="John"><br><br>
+<form action="/action_page.php" method="get">
+  <label for="fname3">First name:</label><br>
+  <input type="text" id="fname3" name="fname" value="John">
   <input type="submit" value="Submit">
 </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+<form action="/action_page.php" method="get">
+  <label for="fname4">First name:</label><br>
+  <input type="text" id="fname4" name="fname" value="John"><br>
+  <label for="lname4">Last name:</label><br>
+  <input type="text" id="lname4" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form>
+
+<a href="/action_page.php?fname=John&lname=Doe">
+  Send data with GET
+</a>
